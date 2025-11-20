@@ -1,11 +1,13 @@
-import { Observer } from "gsap/all";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Observer, ScrollTrigger, SplitText } from "gsap/all";
 
 import Portrait from "../assets/img/about/portrait.jpg";
+import { useRef } from "react";
 
 function About() {
   useGSAP(() => {
+    //! ImgHover
     const originalRotation = gsap.getProperty(".about-img", "rotation");
 
     Observer.create({
@@ -28,6 +30,20 @@ function About() {
         });
       },
     });
+
+    //! TextReveal
+    let split = SplitText.create(".about-textblock", { type: "chars" });
+
+    gsap.from(split.chars, {
+      scrollTrigger: {
+        trigger: ".about-textblock",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: true,
+      },
+      opacity: 0.4,
+      stagger: 0.5,
+    });
   });
 
   return (
@@ -39,7 +55,7 @@ function About() {
           alt="Lukas"
         />
         <div>
-          <p className="max-w-155 opacity-60">
+          <p className="about-textblock max-w-155">
             Ich bin Lukas Meier, Fotograf aus München mit über 5 Jahren
             Erfahrung in den Bereichen Hochzeits-, Portrait- und
             Eventfotografie. <br /> <br /> Meine Bilder sollen echte Emotionen

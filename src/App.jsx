@@ -1,8 +1,8 @@
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { SplitText } from "gsap/SplitText";
-import { Observer } from "gsap/all";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { SplitText } from "gsap/SplitText";
+import { Observer, ScrollTrigger, SplitText } from "gsap/all";
 
 // pages
 import Home from "./pages/Home.jsx";

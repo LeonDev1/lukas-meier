@@ -62,7 +62,8 @@ function Home() {
   const fonts = [
     "Open Sans",
     "DM Serif Text",
-    // "DM Serif Text",
+    "Open Sans",
+    "DM Serif Text",
     "Roboto Serif",
   ];
 
@@ -72,7 +73,6 @@ function Home() {
     fonts.forEach((font, i) => {
       tl.to(textRef.current, {
         opacity: 1,
-        yoyo: true,
         fontFamily: font,
         duration: 0.2,
         ease: "power1",
