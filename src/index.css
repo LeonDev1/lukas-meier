@@ -66,4 +66,22 @@
   .header-img {
     @apply absolute top-6/12 left-6/12 -translate-6/12 min-w-62.5 max-w-95 rounded-[1.5625rem] select-none hover:cursor-pointer;
   }
+
+  .galary-img {
+    @apply absolute transition-all duration-255 ease-in-out rounded-[.9375rem] shadow-[0px_0px_0px_10px_#ffffff];
+  }
+  .galary-div:hover .galary-images-right1 {
+    @apply translate-x-15;
+  }
+  .galary-div:hover .galary-images-right2 {
+    @apply translate-x-25;
+  }
+
+  /* .galary-img {
+    @apply -ml-15 rounded-[.9375rem] shadow-[0px_0px_0px_10px_#ffffff];
+  } */
+
+  /* .galary-div:hover .galary-img {
+    @apply -ml-3;
+  } */
 }
