@@ -61,6 +61,10 @@
     @apply text-[1.25rem] font-outfit;
   }
 
+  a {
+    @apply underline;
+  }
+
   /* custom */
 
   .shadow-full {
