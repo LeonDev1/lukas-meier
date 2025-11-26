@@ -50,7 +50,7 @@ function About() {
     <section className="flex flex-col items-center justify-center h-dvh w-full">
       <div className="flex max-md:flex-col gap-10 items-center justify-between w-[89.58%] max-w-260 px-7">
         <img
-          className="about-img h-67.5 w-67.5 rounded-[.9375rem] hover:cursor-pointer"
+          className="about-img shadow-full h-67.5 w-67.5 rounded-[.9375rem] hover:cursor-pointer"
           src={Portrait}
           alt="Lukas"
         />

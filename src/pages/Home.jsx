@@ -96,23 +96,23 @@ function Home() {
       <div className="flex flex-col gap-10 max-md:gap-5 items-center justify-center min-w-[50%] max-md:mb-20">
         <div className="header-images relative flex px-23.25 py-7.5 w-150.5 h-115 max-[1120px]:w-110">
           <img
-            className="header-img w-95 h-[15.8525rem] rotate-3"
+            className="header-img shadow-full w-95 h-[15.8525rem] rotate-3"
             src={HeaderImg1}
           />
           <img
-            className="header-img w-95 h-[15.8525rem] -rotate-7"
+            className="header-img shadow-full w-95 h-[15.8525rem] -rotate-7"
             src={HeaderImg2}
           />
           <img
-            className="header-img w-62.5 h-[20.8331rem] -rotate-7"
+            className="header-img shadow-full w-62.5 h-[20.8331rem] -rotate-7"
             src={HeaderImg3}
           />
           <img
-            className="header-img w-95 h-[15.835rem] rotate-9"
+            className="header-img shadow-full w-95 h-[15.835rem] rotate-9"
             src={HeaderImg4}
           />
           <img
-            className="header-img w-62.5 h-[23.4462rem] rotate-6 select-all"
+            className="header-img shadow-full w-62.5 h-[23.4462rem] rotate-6 select-all"
             src={HeaderImg5}
           />
         </div>

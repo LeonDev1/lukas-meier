@@ -34,7 +34,7 @@
 
 @theme {
   --font-outfit: "Outfit";
-  --font-roboto-sans: "Roboto Serif";
+  --font-roboto-serif: "Roboto Serif";
   --font-open-sans: "Open Sans";
   --font-dm-serif-text: "DM Serif Text";
   --font-dm-serif-display: "DM Serif Display";
@@ -46,7 +46,7 @@
   }
 
   h1 {
-    @apply text-[4rem] font-bold font-roboto-sans;
+    @apply text-[4rem] font-bold font-roboto-serif;
   }
 
   h2 {
@@ -63,12 +63,22 @@
 
   /* custom */
 
+  .shadow-full {
+    /* https://smoothshadows.com/#djEsMSw1LDAuMDUsNDcsMCwwLCMwMzA3MTIsI2YzZjRmNiwjZmZmZmZmLDI%3D */
+    box-shadow: 0px 0px 2px rgba(3, 7, 18, 0.01),
+      0px 0px 8px rgba(3, 7, 18, 0.02), 0px 0px 17px rgba(3, 7, 18, 0.03),
+      0px 0px 30px rgba(3, 7, 18, 0.04), 0px 0px 47px rgba(3, 7, 18, 0.05);
+  }
+
   .header-img {
     @apply absolute top-6/12 left-6/12 -translate-6/12 min-w-62.5 max-w-95 rounded-[1.5625rem] select-none hover:cursor-pointer;
   }
 
   .galary-img {
     @apply absolute transition-all duration-255 ease-in-out rounded-[.9375rem] shadow-[0px_0px_0px_10px_#ffffff];
+  }
+  .galary-div:hover .galary-img {
+    @apply scale-105 cursor-pointer;
   }
   .galary-div:hover .galary-images-right1 {
     @apply translate-x-15;
