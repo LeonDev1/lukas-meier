@@ -9,18 +9,21 @@ import portrait3 from "../assets/img/galary/preview/portrait/portrait3.png";
 import events1 from "../assets/img/galary/preview/event/event3.png";
 import events2 from "../assets/img/galary/preview/event/event1.png";
 import events3 from "../assets/img/galary/preview/event/event2.png";
+import { Link } from "react-router-dom";
 
 function Galary() {
   return (
     <section className="relative flex justify-center items-center h-dvh w-full">
       <h1 className="absolute top-0 left-6/12 -translate-x-6/12">Galary</h1>
       <div className="flex gap-12.5 flex-col justify-center items-center w-[50%] max-w-150 min-h-50 h-auto">
-        <GalaryPreview
-          name="Hochzeit"
-          img1={wedding1}
-          img2={wedding2}
-          img3={wedding3}
-        />
+        <Link to="/wedding">
+          <GalaryPreview
+            name="Hochzeit"
+            img1={wedding1}
+            img2={wedding2}
+            img3={wedding3}
+          />
+        </Link>
         <GalaryPreview
           name="Portraits"
           img1={portrait1}
