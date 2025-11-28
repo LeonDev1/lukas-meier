@@ -6,5 +6,5 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   // base: "/lukas-meier",
-  base: process.env.NODE_ENV === "production" ? "/lukas-meier" : "/",
+  base: process.env.NODE_ENV === "deploy" ? "/lukas-meier" : "/",
 });
