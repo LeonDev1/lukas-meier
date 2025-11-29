@@ -8,6 +8,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const router = createBrowserRouter([
   { path: "/", element: <App /> },
   { path: "/wedding", element: <Wedding /> },
+  {
+    basename: "/lukas-meier",
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
